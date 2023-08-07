@@ -3,6 +3,7 @@ pipeline {
     stages {
         stage('Build') {
             steps{
+                sh 'cat /etc/hostname'
                 sh 'echo "Build Complete..."'
             }
         }
